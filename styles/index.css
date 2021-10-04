@@ -49,6 +49,11 @@ img {
     background-color: var(--cor0);
 }
 
+svg {
+    display: flex;
+    align-self: flex-end;
+}
+
 /* MENU */
 
 header {
@@ -98,7 +103,7 @@ header > nav > ul > li > a:hover {
 /* Conteúdo */
 
 main {
-background-color: var(--cor6);
+    background-color: var(--cor6);
 }
 
 /* BOAS VINDAS */
@@ -183,6 +188,7 @@ div.profile img{
 }
 
 section.habilidades {
+    background-color: var(--cor6);
     padding: 50px 40px;
 }
 
@@ -257,4 +263,9 @@ div#pg {
     height: 100%;
     width: 43%;
     border-radius: 10px;
+}
+
+section.experiencias {
+    background-color: white;
+    padding: 20px;
 }
