@@ -12,6 +12,12 @@ function mostrarEducacao() {
     return cursos.style.display = 'block'
 }
 
-$(".trabalhos").click(function() {
-    
-})
+$("button").click(function() {
+    $(cursos).fadeout("slow");
+    $(xpTrabalhos).fadein("slow");
+});
+
+$("button").click(function() {
+    $(xpTrabalhos).fadeout("slow");
+    $(cursos).fadein("slow");
+});
