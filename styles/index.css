@@ -269,3 +269,62 @@ section.experiencias {
     background-color: white;
     padding: 20px;
 }
+
+div.botoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div.botoes i {
+    color: var(--cor8);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button {
+    color: var(--cor7);
+    width: 60px;
+    background-color: white;
+    border: none;
+}
+div.botoes > button > h2 > i:hover {
+    font-size: 1.3em;
+    color: var(--cor6);
+}
+
+div.botoes > button > h2 > i:active {
+    background-color: var(--cor10);
+}
+
+button h2 > i {
+    font-size: 1.5em;
+}
+
+div.educacao {
+    width: 50%;
+    margin: 30px auto;
+    text-align: justify;
+}
+
+div.educacao a, div.educacao abbr {
+    text-decoration: none;
+    color: black;
+}
+
+dd {
+    font-size: 0.9em;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+div.trabalhos {
+    width: 50%;
+    margin: 30px auto;
+    text-align: justify;
+}
+
+div.trabalhos a, div.trabalhos abbr {
+    text-decoration: none;
+    color: black;
+}
