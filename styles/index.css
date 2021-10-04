@@ -37,6 +37,18 @@ img {
     max-width: 400px;
 }
 
+::-webkit-scrollbar {
+    background-color: var(--cor5);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--cor10);
+}
+
+::-webkit-scrollbar-button {
+    background-color: var(--cor0);
+}
+
 /* MENU */
 
 header {
