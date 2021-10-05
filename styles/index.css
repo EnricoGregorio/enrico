@@ -286,6 +286,7 @@ button {
     color: var(--cor7);
     width: 60px;
     background-color: white;
+    cursor: pointer;
     border: none;
 }
 div.botoes > button > h2 > i:hover {
@@ -305,6 +306,9 @@ div.educacao {
     width: 50%;
     margin: 30px auto;
     text-align: justify;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 div.educacao a, div.educacao abbr {
@@ -319,12 +323,62 @@ dd {
 }
 
 div.trabalhos {
+    display: none;
     width: 50%;
     margin: 30px auto;
     text-align: justify;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 div.trabalhos a, div.trabalhos abbr {
     text-decoration: none;
     color: black;
+}
+
+footer {
+    background-color: var(--cor6);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+
+div.sociais h3 {
+    color: white;
+    font-family: 'Nixie One';
+    text-align: start;
+    margin: 10px 20px;
+}
+
+div.sociais i {
+    color: white;
+    font-size: 1.4em;
+}
+
+footer li {
+    width: max-content;
+    padding: 20px;
+    margin: 20px;
+    list-style-type: none;
+}
+
+footer a{
+    font-family: 'Comfortaa';
+    color: white;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
+
+footer li:hover {
+    text-decoration: underline;
+    background-color: var(--cor8);
+    border-radius: 20px;
 }
