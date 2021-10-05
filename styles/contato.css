@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comfortaa:wght@400;500;600;700&family=Cutive+Mono&family=Nixie+One&family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Yeseva+One&display=swap');
+
+:root {
+    /* Tema branco */
+    --cor0: #5450BF;
+    --cor1: #615EBF;
+    --cor2: #8582D9;
+    --cor3: #928FD9;
+    --cor4: #9C9AD9;
+
+    /* contraste */
+    --cor10: #3ce3c5;
+    --cor11: #7130c7;
+
+    /* Tema escuro */
+    --cor5: #1E1333;
+    --cor6: #2D1C4D;
+    --cor7: #352159;
+    --cor8: #5A3999;
+    --cor9: #8050D9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', 'Times New Roman', Times, serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    image-rendering: optimizeQuality;
+    width: 100%;
+    max-width: 400px;
+}
+
+::-webkit-scrollbar {
+    background-color: var(--cor5);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--cor0);
+}
+
+::-webkit-scrollbar-button {
+    background-color: var(--cor0);
+}
+
+svg {
+    display: flex;
+    align-self: flex-end;
+}
+
+/* MENU */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: var(--cor8);
+    padding: 10px;
+}
+
+h1#logo a {
+    margin: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+header > nav > ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+header > nav > ul > li {
+    justify-content: center;
+    margin: 10px;
+}
+
+header > nav > ul > li > a {
+    padding: 10px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+header > nav > ul > li > a:hover {
+    background-color: var(--cor1);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+/* Conteúdo */
+
+main {
+    background: linear-gradient(90deg, rgba(113,48,199,1) 0%, rgba(83,30,157,1) 20%, rgba(41,11,82,1) 100%);
+}
+
+/* BOAS VINDAS */
+
+section.title {
+    padding: 20% 20px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(90deg, rgba(113,48,199,1) 0%, rgba(83,30,157,1) 20%, rgba(41,11,82,1) 100%);
+}
+
+section.title h1 {
+    font-family: 'Times New Roman', cursive;
+    font-size: 3em;
+    font-weight: 300;
+}
+
+section.title p {
+    font-family: 'Nixie One';
+    font-size: 1.5em;
+}
+
+footer {
+    background-color: var(--cor6);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+
+div.sociais h3 {
+    color: white;
+    font-family: 'Nixie One';
+    text-align: center;
+    margin: 10px 20px;
+}
+
+div.sociais i {
+    color: white;
+    font-size: 1.4em;
+}
+
+footer li {
+    width: max-content;
+    padding: 20px;
+    margin: 20px 0;
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+footer a{
+    font-family: 'Comfortaa';
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    padding-left: 10px;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
+
+footer li:hover {
+    text-decoration: underline;
+    background-color: var(--cor8);
+    border-radius: 20px;
+}
