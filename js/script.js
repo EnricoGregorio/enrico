@@ -17,8 +17,4 @@ $(function () {
             window.document.querySelector("#edu").style.backgroundColor = "#F2F2F2"
         }
     })
-    
-    $("form").click(function() {
-        window.open("mailto:enricogregorio5@gmail.com")
-    })
 })

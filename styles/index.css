@@ -290,12 +290,17 @@ button {
     border: none;
     border-radius: 10px;
 }
+
+button h2 {
+    border-radius: 10px;
+}
+
 div.botoes > button > h2 > i:hover {
     font-size: 1.3em;
     color: var(--cor6);
 }
 
-div.botoes > button > h2 > i:active {
+div.botoes > button > h2:active {
     background-color: var(--cor10);
 }
 
