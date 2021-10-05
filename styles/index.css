@@ -361,7 +361,7 @@ div.sociais i {
 footer li {
     width: max-content;
     padding: 20px;
-    margin: 20px;
+    margin: 20px 0;
     list-style-type: none;
 }
 
