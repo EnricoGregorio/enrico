@@ -190,6 +190,7 @@ div.profile img{
 section.habilidades {
     background-color: var(--cor6);
     padding: 50px 40px;
+    user-select: none;
 }
 
 section.habilidades h2 {
@@ -274,6 +275,7 @@ div.botoes {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    user-select: none;
 }
 
 div.botoes i {
