@@ -278,6 +278,7 @@ div.botoes i {
 }
 
 button {
+    user-select: none;
     color: var(--cor2);
     width: 60px;
     background-color: white;
