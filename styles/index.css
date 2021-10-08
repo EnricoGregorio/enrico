@@ -422,7 +422,7 @@ button#return-button {
         text-align: center;
         list-style-type: none;
         border-bottom: 1px solid white;
-        padding: 7px 0;
+        padding: 16px 0;
         user-select: none;
     }
     nav.mobile li > a {
