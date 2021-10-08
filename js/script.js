@@ -3,12 +3,20 @@ $(function () {
     // Header
     // Botão do header
     
-    /* <i class="fas fa-times"></i> */
+    window.document.querySelector(".fa-times").style.display = 'none'
 
     //Funções no header
     $(".menu-button").click(function() {
         let menuMobile = $('nav.mobile')
-        menuMobile.slideToggle()
+        if (menuMobile.is(':hidden') == false) {
+            menuMobile.slideToggle()
+            window.document.querySelector(".fa-bars").style.display = 'block'
+            window.document.querySelector(".fa-times").style.display = 'none'
+        } else {
+            menuMobile.slideToggle()
+            window.document.querySelector(".fa-bars").style.display = 'none'
+            window.document.querySelector(".fa-times").style.display = 'block'
+        }
     })
 
     // Sessão habilidades
