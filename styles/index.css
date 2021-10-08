@@ -295,10 +295,6 @@ div.botoes > button > h2 > i:hover {
     color: var(--cor2);
 }
 
-div.botoes > button > h2:active {
-    background-color: var(--cor3);
-}
-
 button h2 > i {
     font-size: 1.5em;
 }
