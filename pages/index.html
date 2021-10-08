@@ -19,14 +19,14 @@
 <body>
     <header>
         <div>
-            <h1 id="logo"><a href="/pages/index.html" target="_self">Enrico</a></h1>
+            <h1 id="logo"><a href="#title" target="_self">Enrico</a></h1>
         </div>
         <nav class="desktop">
             <ul>
-                <li><a href="/pages/index.html" target="_self">Home</a></li>
-                <li><a href="#" target="_self">Sobre mim</a></li>
-                <li><a href="#" target="_self">Experiências</a></li>
-                <li><a href="contato.html" target="_self">Contato</a></li>
+                <li><a href="#title" target="_self">Home</a></li>
+                <li><a href="#sobre" target="_self">Sobre mim</a></li>
+                <li><a href="#experiencias" target="_self">Experiências</a></li>
+                <li><a href="#contato" target="_self">Contato</a></li>
             </ul>
         </nav>
         <button class="menu-button">
@@ -35,19 +35,19 @@
         </button>
         <nav class="mobile">
             <ul>
-                <li><a href="/pages/index.html" target="_self">Home</a></li>
-                <li><a href="#" target="_self">Sobre mim</a></li>
-                <li><a href="#" target="_self">Experiências</a></li>
-                <li><a href="contato.html" target="_self">Contato</a></li>
+                <li><a href="#title" target="_self">Home</a></li>
+                <li><a href="#sobre" target="_self">Sobre mim</a></li>
+                <li><a href="#experiencias" target="_self">Experiências</a></li>
+                <li><a href="#contato" target="_self">Contato</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="title">
+        <section id="title">
             <h1>Bem-vindo(a) ao meu site</h1>
             <p>Enrico Sobrinho Gregório</p>
         </section>
-        <section class="resumo">
+        <section class="resumo" id="sobre">
             <h2>Sobre mim</h2>
             <div class="sobre-mim">
                 <h3>Olá</h3>
@@ -102,7 +102,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#ffffff" fill-opacity="1" d="M0,160L80,170.7C160,181,320,203,480,218.7C640,235,800,245,960,229.3C1120,213,1280,171,1360,149.3L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
         </svg>
-        <section class="experiencias targetb">
+        <section id="experiencias">
             <div class="botoes">
                 <button id="edu">
                     <h2><i class="fas fa-graduation-cap"></i></h2>
@@ -138,8 +138,23 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFFFFF" fill-opacity="1" d="M0,224L40,192C80,160,160,96,240,101.3C320,107,400,181,480,197.3C560,213,640,171,720,170.7C800,171,880,213,960,202.7C1040,192,1120,128,1200,122.7C1280,117,1360,171,1400,197.3L1440,224L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
     </main>
     <footer>
+        <div id="contato">
+            <div class="sociais">
+                <h3>Redes sociais</h3>
+                <ul>
+                    <li><i class="fas fa-at"></i><a href="mailto:enricogregorio5@gmail.com">enricogregorio5@gmail.com</a></li>
+                    <li><i class="fab fa-github"></i><a href="https://github.com/EnricoGregorio/" target="_blank">Meu perfil do GitHub</a></li>
+                    <li><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/esg/">Meu perfil do LinkedIn</a></li>
+                    <li><i class="fab fa-instagram"></i><a href="https://www.instagram.com/enrico.s.g/" target="_blank">Meu perfil do Instagram</a></li>
+                    <li><i class="fab fa-twitter"></i><a href="https://twitter.com/enricosg_">Meu perfil do Twitter</a></li>
+                </ul>
+            </div>
+        </div>
         <p>Todos os direitos reservados <strong>₢ Enrico Sobrinho Gregório</strong> - 2021</p>
     </footer>
+    <button id="return-button" onclick="topFunction()" title="Voltar ao topo">
+        <i class="fas fa-chevron-up"></i>
+    </button>
     <script src="../js/jquery.js"></script>
     <script src="../js/script.js"></script>
 </body>

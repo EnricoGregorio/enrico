@@ -1,9 +1,13 @@
-$(function () {
+window.document.querySelector(".fa-times").style.display = 'none'
 
-    // Header
-    // Botão do header
-    
-    window.document.querySelector(".fa-times").style.display = 'none'
+$(function() {
+    $('nav a').click(function(e) {
+        e.preventDefault()
+        let id = $(this).attr('href'), targetOffset = $(id).offset().top
+        $('html, body').animate({
+            scrollTop: targetOffset
+        }, 500)
+    })
 
     //Funções no header
     $(".menu-button").click(function() {
@@ -43,3 +47,20 @@ $(function () {
         }
     })
 })
+
+// Função do botão para retornar ao topo
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        document.getElementById("return-button").style.display = "block";
+    } else {
+        document.getElementById("return-button").style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}

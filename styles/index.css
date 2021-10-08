@@ -113,20 +113,20 @@ main {
 
 /* BOAS VINDAS */
 
-section.title {
+section#title {
     padding: 20% 20px;
     text-align: center;
     color: white;
     background: linear-gradient(90deg, rgba(113,48,199,1) 0%, rgba(83,30,157,1) 20%, rgba(41,11,82,1) 100%);
 }
 
-section.title h1 {
+section#title h1 {
     font-family: 'Times New Roman', cursive;
     font-size: 3em;
     font-weight: 300;
 }
 
-section.title p {
+section#title p {
     font-family: 'Nixie One';
     font-size: 1.5em;
 }
@@ -270,7 +270,7 @@ div#pg {
     border-radius: 10px;
 }
 
-section.experiencias {
+section#experiencias {
     background-color: white;
     padding: 20px;
 }
@@ -353,6 +353,18 @@ div.trabalhos a, div.trabalhos abbr {
     color: black;
 }
 
+div.sociais h3 {
+    color: white;
+    font-family: 'Nixie One';
+    text-align: center;
+    margin: 10px 20px;
+}
+
+div.sociais i {
+    color: white;
+    font-size: 1.4em;
+}
+
 footer {
     background-color: var(--cor6);
     display: flex;
@@ -364,6 +376,49 @@ footer {
 
 footer p {
     color: white;
+    text-align: center;
+}
+
+footer li {
+    width: max-content;
+    padding: 20px;
+    margin: 20px 0;
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+footer a{
+    font-family: 'Comfortaa';
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    padding-left: 10px;
+}
+
+footer p {
+    margin-top: 30px;
+    color: white;
+    text-align: center;
+}
+
+footer li:hover {
+    text-decoration: underline;
+    background-color: var(--cor8);
+    border-radius: 20px;
+}
+
+button#return-button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 9999;
+    outline: none;
+    background-color: var(--cor0);
+    color: white;
+    cursor: pointer;
+    padding: 21px;
+    border-radius: 50%;
     text-align: center;
 }
 
