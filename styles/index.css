@@ -3,21 +3,10 @@
 :root {
     /* Tema branco */
     --cor0: #5450BF;
-    --cor1: #615EBF;
-    --cor2: #8582D9;
-    --cor3: #928FD9;
-    --cor4: #9C9AD9;
-
-    /* contraste */
-    --cor10: #3ce3c5;
-    --cor11: #7130c7;
-
-    /* Tema escuro */
-    --cor5: #1E1333;
-    --cor6: #2D1C4D;
-    --cor7: #352159;
-    --cor8: #5A3999;
-    --cor9: #8050D9;
+    --cor1: #928FD9;
+    --cor2: #2D1C4D;
+    --cor3: #3ce3c5;
+    --cor4: #7130c7;
 }
 
 * {
@@ -38,7 +27,7 @@ img {
 }
 
 ::-webkit-scrollbar {
-    background-color: var(--cor5);
+    background-color: var(--cor2);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -61,7 +50,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: var(--cor8);
+    background-color: var(--cor2);
     padding: 10px;
 }
 
@@ -95,7 +84,7 @@ nav.desktop > ul > li > a {
 }
 
 nav.desktop > ul > li > a:hover {
-    background-color: var(--cor1);
+    background-color: var(--cor4);
     border-radius: 10px;
     font-weight: 500;
     font-size: 1.1em;
@@ -108,7 +97,7 @@ nav.mobile, button.menu-button {
 /* Conteúdo */
 
 main {
-    background-color: var(--cor6);
+    background-color: var(--cor2);
 }
 
 /* BOAS VINDAS */
@@ -137,7 +126,7 @@ section.resumo {
     justify-content: space-around;
     flex-wrap: wrap;
     color: white;
-    background-color: var(--cor11);
+    background-color: var(--cor4);
     padding: 20px;
 }
 
@@ -192,7 +181,7 @@ div.profile img{
 }
 
 section.habilidades {
-    background-color: var(--cor6);
+    background-color: var(--cor2);
     padding: 50px 40px;
     user-select: none;
 }
@@ -224,47 +213,47 @@ i.hab {
 div.background-range {
     height: 10px;
     margin-bottom: 50px;
-    background-color: var(--cor3);
+    background-color: var(--cor1);
     border-radius: 10px;
 }
 
 div#js {
-    background-color: var(--cor10);
+    background-color: var(--cor3);
     height: 100%;
     width: 66%;
     border-radius: 10px;
 }
 
 div#java {
-    background-color: var(--cor10);
+    background-color: var(--cor3);
     height: 100%;
     width: 72%;
     border-radius: 10px;
 }
 
 div#py {
-    background-color: var(--cor10);
+    background-color: var(--cor3);
     height: 100%;
     width: 84%;
     border-radius: 10px;
 }
 
 div#html {
-    background-color: var(--cor10);
+    background-color: var(--cor3);
     height: 100%;
     width: 98%;
     border-radius: 10px;
 }
 
 div#css {
-    background-color: var(--cor10);
+    background-color: var(--cor3);
     height: 100%;
     width: 60%;
     border-radius: 10px;
 }
 
 div#pg {
-    background-color: var(--cor10);
+    background-color: var(--cor3);
     height: 100%;
     width: 43%;
     border-radius: 10px;
@@ -283,13 +272,13 @@ div.botoes {
 }
 
 div.botoes i {
-    color: var(--cor8);
+    color: var(--cor2);
     padding: 10px;
     border-radius: 5px;
 }
 
 button {
-    color: var(--cor7);
+    color: var(--cor2);
     width: 60px;
     background-color: white;
     cursor: pointer;
@@ -303,11 +292,11 @@ button h2 {
 
 div.botoes > button > h2 > i:hover {
     font-size: 1.3em;
-    color: var(--cor6);
+    color: var(--cor2);
 }
 
 div.botoes > button > h2:active {
-    background-color: var(--cor10);
+    background-color: var(--cor3);
 }
 
 button h2 > i {
@@ -366,7 +355,7 @@ div.sociais i {
 }
 
 footer {
-    background-color: var(--cor6);
+    background-color: var(--cor2);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -397,7 +386,7 @@ footer p {
 
 footer li:hover {
     text-decoration: underline;
-    background-color: var(--cor8);
+    background-color: var(--cor0);
     border-radius: 20px;
 }
 
@@ -442,11 +431,11 @@ button#return-button {
         padding: 7px 20px;
     }
     nav.mobile li:hover {
-        background-color: var(--cor6);
+        background-color: var(--cor0);
         text-decoration: underline;
     }
     nav.mobile li:active {
-        background-color: var(--cor7);
+        background-color: var(--cor2);
         text-decoration: underline;
     }
     button.menu-button {
