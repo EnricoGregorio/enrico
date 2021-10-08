@@ -419,6 +419,7 @@ button#return-button {
         width: 100%;
     }
     nav.mobile li {
+        font-size: 1.2em;
         text-align: center;
         list-style-type: none;
         border-bottom: 1px solid white;
