@@ -371,17 +371,12 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px 10px;
-}
-
-footer p {
-    color: white;
-    text-align: center;
+    padding: 20px 0;
 }
 
 footer li {
     width: max-content;
-    padding: 20px;
+    padding: 20px 5px;
     margin: 20px 0;
     margin: 0 auto;
     list-style-type: none;
@@ -392,7 +387,6 @@ footer a{
     color: white;
     text-decoration: none;
     padding: 20px;
-    padding-left: 10px;
 }
 
 footer p {
@@ -469,5 +463,8 @@ button#return-button {
     div.educacao, div.trabalhos {
         width: 90%;
         margin: 16px auto;
+    }
+    footer li {
+        font-size: 0.9em;
     }
 }
