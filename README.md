@@ -1,2 +1,2 @@
 # Meu Site
- Meu site pessoal.
+ Este é meu site pessoal, criado puramente com HTML5, CSS3 e JavaScript.
