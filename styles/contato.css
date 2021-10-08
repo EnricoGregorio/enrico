@@ -73,19 +73,19 @@ h1#logo a {
     color: white;
 }
 
-header > nav > ul {
+nav.desktop ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+nav.desktop > ul > li {
+    justify-content: center;
+    margin: 10px;
     list-style-type: none;
 }
 
-header > nav > ul > li {
-    justify-content: center;
-    margin: 10px;
-}
-
-header > nav > ul > li > a {
+nav.desktop > ul > li > a {
     padding: 10px;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
@@ -93,11 +93,15 @@ header > nav > ul > li > a {
     color: white;
 }
 
-header > nav > ul > li > a:hover {
+nav.desktop > ul > li > a:hover {
     background-color: var(--cor1);
     border-radius: 10px;
     font-weight: 500;
     font-size: 1.1em;
+}
+
+nav.mobile, button.menu-button {
+    display: none;
 }
 
 /* Conteúdo */
@@ -164,6 +168,7 @@ footer a{
 }
 
 footer p {
+    margin-top: 30px;
     color: white;
     text-align: center;
 }
@@ -172,4 +177,62 @@ footer li:hover {
     text-decoration: underline;
     background-color: var(--cor8);
     border-radius: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        padding: 10px 0 0 0;
+    }
+    button {
+        color: var(--cor7);
+        width: 60px;
+        background-color: white;
+        cursor: pointer;
+        border: none;
+        border-radius: 10px;
+    }
+    #logo h1 {
+        margin-top: 5px;
+    }
+    nav.desktop {
+        display: none;
+    }
+    nav.mobile {
+        width: 100%;
+    }
+    nav.mobile li {
+        text-align: center;
+        list-style-type: none;
+        border-bottom: 1px solid white;
+        padding: 7px 0;
+        user-select: none;
+    }
+    nav.mobile li > a {
+        color: white;
+        text-decoration: none;
+        padding: 7px 20px;
+    }
+    nav.mobile li:hover {
+        background-color: var(--cor6);
+        text-decoration: underline;
+    }
+    nav.mobile li:active {
+        background-color: var(--cor7);
+        text-decoration: underline;
+    }
+    button.menu-button {
+        display: block;
+        background: none;
+        margin: 0 10px 10px 10px;
+    }
+    .menu-button i {
+        font-size: 36px;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+    div.educacao, div.trabalhos {
+        width: 90%;
+        margin: 16px auto;
+    }
 }
