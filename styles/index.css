@@ -1,18 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comfortaa:wght@400;500;600;700&family=Cutive+Mono&family=Nixie+One&family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    /* Tema branco */
-    --cor0: #5450BF;
-    --cor1: #928FD9;
-    --cor2: #2D1C4D;
-    --cor3: #3ce3c5;
-    --cor4: #7130c7;
+    --cor0: #303440;
+    --cor1: #0075FF;
+    --cor2: #F3F3F3;
+    --cor3: #0b4c97;
 }
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', 'Times New Roman', Times, serif;
+    font-family: 'Montserrat', 'Times New Roman', Times, serif;
 }
 
 html, body {
@@ -26,7 +24,7 @@ img {
     max-width: 400px;
 }
 
-::-webkit-scrollbar {
+ ::-webkit-scrollbar {
     background-color: var(--cor2);
 }
 
@@ -36,7 +34,7 @@ img {
 
 ::-webkit-scrollbar-button {
     background-color: var(--cor0);
-}
+} 
 
 svg {
     display: flex;
@@ -50,17 +48,21 @@ header {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: var(--cor2);
+    background-color: var(--cor0);
     padding: 10px;
 }
 
 h1#logo a {
     padding: 20px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     text-decoration: none;
     text-transform: uppercase;
     color: white;
+}
+
+h1#logo a:hover {
+    text-decoration: 1px underline;
 }
 
 nav.desktop ul {
@@ -78,13 +80,13 @@ nav.desktop > ul > li {
 nav.desktop > ul > li > a {
     padding: 10px;
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     color: white;
 }
 
 nav.desktop > ul > li > a:hover {
-    background-color: var(--cor4);
+    background-color: var(--cor1);
     border-radius: 10px;
     font-weight: 500;
     font-size: 1.1em;
@@ -97,7 +99,7 @@ nav.mobile, button.menu-button {
 /* Conteúdo */
 
 main {
-    background-color: var(--cor2);
+    background-color: var(--cor0);
 }
 
 /* BOAS VINDAS */
@@ -106,17 +108,19 @@ section#title {
     padding: 20% 20px;
     text-align: center;
     color: white;
-    background: linear-gradient(90deg, rgba(113,48,199,1) 0%, rgba(83,30,157,1) 20%, rgba(41,11,82,1) 100%);
+    background-color: var(--cor0);
 }
 
 section#title h1 {
-    font-family: 'Times New Roman', cursive;
+    color: var(--cor1);
+    font-family: 'Bebas Neue', display;
     font-size: 3em;
     font-weight: 300;
 }
 
 section#title p {
-    font-family: 'Nixie One';
+    color: var(--cor2);
+    font-family: 'Montserrat';
     font-size: 1.5em;
 }
 
@@ -126,12 +130,12 @@ section.resumo {
     justify-content: space-around;
     flex-wrap: wrap;
     color: white;
-    background-color: var(--cor4);
+    background-color: var(--cor1);
     padding: 20px;
 }
 
 section.resumo > h2 {
-    font-family: 'Nixie One';
+    font-family: 'Montserrat';
     font-size: 1.9em;
     text-align: center;
     margin: 50px;
@@ -143,21 +147,21 @@ section.resumo > div.sobre-mim {
     color: black;
     background-color: rgba(255, 255, 255, 0.973);
     text-align: left;
-    font-family: 'Open Sans';
+    font-family: 'Montserrat';
     padding: 30px 20px;
     border-radius: 40px;
     box-shadow: 3px 3px 3px rgba(14, 0, 37, 0.445);
 }
 
 div.sobre-mim h3 {
-    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.9em;
     font-weight: 600;
     margin-bottom: 50px;
 }
 
 div.sobre-mim p {
-    font-family: 'Comfortaa';
+    font-family: 'Montserrat';
     font-weight: 400;
     font-size: 1.5em;
 }
@@ -169,7 +173,7 @@ div.sobre-mim a, div.sobre-mim abbr {
 
 div.profile {
     margin: 20px;
-    background-color: var(--cor0);
+    background-color: var(--cor3);
     border-radius: 150px 60px 210px 50px;
     max-width: 80%;
     box-shadow: 3px 3px 3px rgba(14, 0, 37, 0.445);
@@ -181,13 +185,13 @@ div.profile img{
 }
 
 section.habilidades {
-    background-color: var(--cor2);
+    background-color: var(--cor0);
     padding: 50px 40px;
     user-select: none;
 }
 
 section.habilidades h2 {
-    font-family: 'Nixie One';
+    font-family: 'Montserrat';
     font-size: 2em;
     text-align: start;
     margin-bottom: 60px;
@@ -200,7 +204,7 @@ section.habilidades ul {
 
 section.habilidades li {
     margin-bottom: 5px;
-    font-family: 'Comfortaa';
+    font-family: 'Montserrat';
     color: white;
 }
 
@@ -213,50 +217,18 @@ i.hab {
 div.background-range {
     height: 10px;
     margin-bottom: 50px;
-    background-color: var(--cor1);
+    background-color: var(--cor1 );
     border-radius: 10px;
 }
 
-div#js {
-    background-color: var(--cor3);
-    height: 100%;
-    width: 66%;
-    border-radius: 10px;
+section.habilidades > label {
+    color: white;
 }
 
-div#java {
-    background-color: var(--cor3);
-    height: 100%;
-    width: 72%;
-    border-radius: 10px;
-}
-
-div#py {
-    background-color: var(--cor3);
-    height: 100%;
-    width: 84%;
-    border-radius: 10px;
-}
-
-div#html {
-    background-color: var(--cor3);
-    height: 100%;
-    width: 98%;
-    border-radius: 10px;
-}
-
-div#css {
-    background-color: var(--cor3);
-    height: 100%;
-    width: 60%;
-    border-radius: 10px;
-}
-
-div#pg {
-    background-color: var(--cor3);
-    height: 100%;
-    width: 43%;
-    border-radius: 10px;
+section.habilidades > progress {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    width: 100%;
 }
 
 section#experiencias {
@@ -272,14 +244,13 @@ div.botoes {
 }
 
 div.botoes i {
-    color: var(--cor2);
+    color: var(--cor0);
     padding: 10px;
     border-radius: 5px;
 }
 
 button {
     user-select: none;
-    color: var(--cor2);
     width: 60px;
     background-color: white;
     cursor: pointer;
@@ -293,7 +264,7 @@ button h2 {
 
 div.botoes > button > h2 > i:hover {
     font-size: 1.3em;
-    color: var(--cor2);
+    color: var(--cor1);
 }
 
 button h2 > i {
@@ -341,7 +312,7 @@ div.trabalhos a, div.trabalhos abbr {
 
 div.sociais h3 {
     color: white;
-    font-family: 'Nixie One';
+    font-family: 'Montserrat';
     text-align: center;
     margin: 10px 20px;
 }
@@ -352,7 +323,7 @@ div.sociais i {
 }
 
 footer {
-    background-color: var(--cor2);
+    background-color: var(--cor0);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -369,7 +340,7 @@ footer li {
 }
 
 footer a{
-    font-family: 'Comfortaa';
+    font-family: 'Montserrat';
     color: white;
     text-decoration: none;
     padding: 20px;
@@ -383,7 +354,7 @@ footer p {
 
 footer li:hover {
     text-decoration: underline;
-    background-color: var(--cor0);
+    background-color: var(--cor1);
     border-radius: 20px;
 }
 
@@ -394,8 +365,8 @@ button#return-button {
     right: 30px;
     z-index: 9999;
     outline: none;
-    background-color: var(--cor0);
-    color: white;
+    background-color: var(--cor2);
+    color: var(--cor0);
     cursor: pointer;
     padding: 21px;
     border-radius: 50%;
@@ -429,7 +400,7 @@ button#return-button {
         padding: 7px 20px;
     }
     nav.mobile li:hover {
-        background-color: var(--cor0);
+        background-color: var(--cor1);
         text-decoration: underline;
     }
     nav.mobile li:active {
