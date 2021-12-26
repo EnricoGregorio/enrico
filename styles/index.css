@@ -37,6 +37,7 @@ img {
     background-color: var(--cor0);
 } 
 
+/* Como corrigir espaços entre SVGs e outro elemento */
 svg {
     display: flex;
     align-self: flex-end;
