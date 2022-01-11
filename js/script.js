@@ -1,19 +1,19 @@
 //Funções JQuery
 $(function() {
-    let cursos = $('div.educacao')
-    let xpTrabalhos = $('div.trabalhos')
+    const cursos = $('div.educacao')
+    const xpTrabalhos = $('div.trabalhos')
 
     // Função para criar scroll dinâmico para as sessões Sobre mim, Experiências e Contato.
     $('nav a').click(function(e) {
         e.preventDefault()
-        let id = $(this).attr('href'), targetOffset = $(id).offset().top
+        const id = $(this).attr('href'), targetOffset = $(id).offset().top
         $('html, body').animate({
             scrollTop: targetOffset
         }, 500)
     })
     // Função para quando pressionar o botão do menu, ele faça algo.
     $(".menu-button").click(function() {
-        let menuMobile = $('nav.mobile')
+        const menuMobile = $('nav.mobile')
         if (menuMobile.is(':hidden') == false) {
             menuMobile.slideToggle()
             window.document.querySelector(".fa-bars").style.display = 'block'
@@ -43,7 +43,7 @@ $(function() {
     })
     // Função do botão para retornar ao topo do site.
     $("#return-button").click(function() {
-        let topo = $('header'), targetOffset = $(topo).offset().top
+        const topo = $('header'), targetOffset = $(topo).offset().top
         $('html, body').animate({
             scrollTop: targetOffset
         }, 500)
@@ -57,14 +57,16 @@ window.onscroll = function() {
     scrollFunction()
 }
 function scrollFunction() {
+    const returnButton = $("button#return-button")
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        document.getElementById("return-button").style.display = "block";
+        returnButton.fadeIn(250)
     } else {
-        document.getElementById("return-button").style.display = "none";
+        returnButton.fadeOut(250)
+
     }
 }
 
 // Bloco para sempre atualizar o ano de direito autoral do site.
-now = new Date
-year = now.getFullYear()
+let now = new Date
+let year = now.getFullYear()
 window.document.getElementById('copyright-year').innerHTML = year
