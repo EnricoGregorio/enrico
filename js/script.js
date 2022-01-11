@@ -63,3 +63,8 @@ function scrollFunction() {
         document.getElementById("return-button").style.display = "none";
     }
 }
+
+// Bloco para sempre atualizar o ano de direito autoral do site.
+now = new Date
+year = now.getFullYear()
+window.document.getElementById('copyright-year').innerHTML = year
