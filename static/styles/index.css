@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --cor0: #303440;
+    --cor1: #0075FF;
+    --cor2: #F3F3F3;
+    --cor3: #0b4c97;
+}
+
+* {
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', 'Times New Roman', Times, serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    image-rendering: optimizeQuality;
+    width: 100%;
+    max-width: 400px;
+}
+
+::-webkit-scrollbar {
+    background-color: var(--cor2);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--cor0);
+}
+
+::-webkit-scrollbar-button {
+    background-color: var(--cor0);
+}
+
+/* Como corrigir espaços entre SVGs e outro elemento */
+svg {
+    display: flex;
+    align-self: flex-end;
+}
+
+/* MENU */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: var(--cor0);
+    padding: 10px;
+}
+
+h1#logo a {
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+h1#logo a:hover {
+    text-decoration: 1px underline;
+}
+
+nav.desktop ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav.desktop>ul>li {
+    justify-content: center;
+    margin: 10px;
+    list-style-type: none;
+}
+
+nav.desktop>ul>li>a {
+    padding: 10px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    transition: .2s ease-in;
+
+}
+
+nav.desktop>ul>li>a:hover {
+    background-color: var(--cor1);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+nav.mobile, button.menu-button {
+    display: none;
+}
+
+/* Conteúdo */
+
+main {
+    background-color: var(--cor0);
+}
+
+/* BOAS VINDAS */
+
+section#title {
+    padding: 20% 20px;
+    text-align: center;
+    color: white;
+    background-color: var(--cor0);
+}
+
+section#title h1 {
+    color: var(--cor1);
+    font-family: 'Bebas Neue', display;
+    font-size: 3em;
+    font-weight: 300;
+}
+
+section#title p {
+    color: var(--cor2);
+    font-family: 'Montserrat';
+    font-size: 1.5em;
+}
+
+section.resumo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: white;
+    background-color: var(--cor1);
+    padding: 20px;
+}
+
+section.resumo>h2 {
+    font-family: 'Montserrat';
+    font-size: 1.9em;
+    text-align: center;
+    margin: 50px;
+    width: 100%;
+}
+
+section.resumo>div.sobre-mim {
+    max-width: 300px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.973);
+    text-align: left;
+    font-family: 'Montserrat';
+    padding: 30px 20px;
+    border-radius: 40px;
+    box-shadow: 3px 3px 3px rgba(14, 0, 37, 0.445);
+}
+
+div.sobre-mim h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.9em;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+div.sobre-mim p {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+div.sobre-mim a, div.sobre-mim abbr {
+    color: black;
+    text-decoration: none;
+}
+
+div.profile {
+    margin: 20px;
+    background-color: var(--cor3);
+    border-radius: 150px 60px 210px 50px;
+    max-width: 80%;
+    box-shadow: 3px 3px 3px rgba(14, 0, 37, 0.445);
+}
+
+div.profile img {
+    max-width: 100%;
+    border-radius: 150px 60px 210px 50px;
+}
+
+section.habilidades {
+    background-color: var(--cor0);
+    padding: 50px 40px;
+    user-select: none;
+}
+
+section.habilidades h2 {
+    font-family: 'Montserrat';
+    font-size: 2em;
+    text-align: start;
+    margin-bottom: 60px;
+    color: white;
+}
+
+section.habilidades ul {
+    list-style-type: none;
+}
+
+section.habilidades li {
+    margin-bottom: 5px;
+    font-family: 'Montserrat';
+    color: white;
+}
+
+i.hab {
+    margin-top: 5px;
+    font-size: 2em;
+    color: white;
+}
+
+div.background-range {
+    height: 10px;
+    margin-bottom: 50px;
+    background-color: var(--cor1);
+    border-radius: 10px;
+}
+
+section.habilidades>label {
+    color: white;
+}
+
+section.habilidades>progress {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+section#experiencias {
+    background-color: white;
+    padding: 20px;
+}
+
+div.botoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    user-select: none;
+}
+
+div.botoes i {
+    color: var(--cor0);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button {
+    user-select: none;
+    width: 60px;
+    background-color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+button h2 {
+    border-radius: 10px;
+}
+
+div.botoes>button>h2>i:hover {
+    font-size: 1.3em;
+    color: var(--cor1);
+}
+
+button h2>i {
+    font-size: 1.5em;
+}
+
+button#edu {
+    background-color: #F2F2F2;
+}
+
+div.educacao {
+    width: 50%;
+    margin: 30px auto;
+    text-align: justify;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+div.educacao a, div.educacao abbr {
+    text-decoration: none;
+    color: black;
+}
+
+dd {
+    font-size: 0.9em;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+div.trabalhos {
+    display: none;
+    width: 50%;
+    margin: 30px auto;
+    text-align: justify;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+div.trabalhos a, div.trabalhos abbr {
+    text-decoration: none;
+    color: black;
+}
+
+div.sociais h3 {
+    color: white;
+    font-family: 'Montserrat';
+    text-align: center;
+    margin: 10px 20px;
+}
+
+div.sociais i {
+    color: white;
+    font-size: 1.4em;
+}
+
+footer {
+    background-color: var(--cor0);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+footer li {
+    width: max-content;
+    padding: 20px 5px;
+    margin: 20px 0;
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+footer a {
+    font-family: 'Montserrat';
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+footer p {
+    margin-top: 30px;
+    color: white;
+    text-align: center;
+}
+
+footer li:hover {
+    text-decoration: underline;
+    background-color: var(--cor1);
+    border-radius: 20px;
+}
+
+button#return-button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 9999;
+    outline: none;
+    background-color: var(--cor2);
+    color: var(--cor0);
+    cursor: pointer;
+    padding: 21px;
+    border-radius: 50%;
+    text-align: center;
+    transition: .2s ease-in;
+
+}
+
+button#return-button:hover {
+    background-color: var(--cor1);
+    color: white;
+}
+
+button#return-button:active {
+    background-color: var(--cor0);
+    color: white;
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        padding: 10px 0 0 0;
+    }
+
+    h1#logo {
+        margin-top: 6px;
+    }
+
+    nav.desktop {
+        display: none;
+    }
+
+    nav.mobile {
+        width: 100%;
+    }
+
+    nav.mobile li {
+        font-size: 1.2em;
+        text-align: center;
+        list-style-type: none;
+        border-bottom: 1px solid white;
+        padding: 16px 0;
+        user-select: none;
+    }
+
+    nav.mobile li>a {
+        color: white;
+        text-decoration: none;
+        padding: 7px 20px;
+    }
+
+    nav.mobile li:hover {
+        background-color: var(--cor1);
+        text-decoration: underline;
+    }
+
+    nav.mobile li:active {
+        background-color: var(--cor2);
+        text-decoration: underline;
+    }
+
+    button.menu-button {
+        display: block;
+        background: none;
+        margin: 0 10px 10px 10px;
+    }
+
+    .menu-button i {
+        font-size: 36px;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+
+    div.educacao, div.trabalhos {
+        width: 90%;
+        margin: 16px auto;
+    }
+
+    footer li {
+        font-size: 0.9em;
+    }
+}
