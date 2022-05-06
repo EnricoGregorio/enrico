@@ -62,11 +62,21 @@ function scrollFunction() {
         returnButton.fadeIn(250)
     } else {
         returnButton.fadeOut(250)
-
     }
 }
 
-// Bloco para sempre atualizar o ano de direito autoral do site.
-let now = new Date
-let year = now.getFullYear()
-window.document.getElementById('copyright-year').innerHTML = year
+// Comandos para atualizar a minha idade automaticamente e para atualizar o ano de direito autoral do site.
+let now = new Date;
+let month = now.getMonth() + 1;
+let year = now.getFullYear();
+let bdYear = 2004;
+
+let yearOld = year - bdYear;
+let diffMonth = 7 - month;
+
+if (diffMonth <= 0) {
+    window.document.querySelector('#yearold').innerHTML = yearOld;
+} else {
+    window.document.querySelector('#yearold').innerHTML = yearOld - 1;
+}
+window.document.getElementById('copyright-year').innerHTML = year;
