@@ -1,7 +1,8 @@
+'use strict';
 //Funções JQuery
 $(function() {
-    const cursos = $('div.educacao')
-    const xpTrabalhos = $('div.trabalhos')
+    const cursos = $('div.educacao');
+    const xpTrabalhos = $('div.trabalhos');
 
     // Função para criar scroll dinâmico para as sessões Sobre mim, Experiências e Contato.
     $('nav a').click(function(e) {
@@ -15,30 +16,30 @@ $(function() {
     $(".menu-button").click(function() {
         const menuMobile = $('nav.mobile')
         if (menuMobile.is(':hidden') == false) {
-            menuMobile.slideToggle()
-            window.document.querySelector(".fa-bars").style.display = 'block'
-            window.document.querySelector(".fa-times").style.display = 'none'
+            menuMobile.slideToggle();
+            window.document.querySelector(".fa-bars").style.display = 'block';
+            window.document.querySelector(".fa-times").style.display = 'none';
         } else {
-            menuMobile.slideToggle()
-            window.document.querySelector(".fa-bars").style.display = 'none'
-            window.document.querySelector(".fa-times").style.display = 'block'
+            menuMobile.slideToggle();
+            window.document.querySelector(".fa-bars").style.display = 'none';
+            window.document.querySelector(".fa-times").style.display = 'block';
         }
     })
     // Funções para quando pressionar algum dos botões de Trabalhos ou Educação, ele mostre o conteúdo.
     $("#job").click(function() {
         if (xpTrabalhos.is(':hidden') == true) {
-            cursos.fadeOut()
-            xpTrabalhos.fadeIn(1500)
-            window.document.querySelector("#edu").style.backgroundColor = "#FFFFFF"
-            window.document.querySelector("#job").style.backgroundColor = "#F2F2F2"
+            cursos.fadeOut();
+            xpTrabalhos.fadeIn(1500);
+            window.document.querySelector("#edu").style.backgroundColor = "#FFFFFF";
+            window.document.querySelector("#job").style.backgroundColor = "#F2F2F2";
         }
     })
     $("#edu").click(function() {
         if (cursos.is(':hidden') == true) {
-            xpTrabalhos.fadeOut()
-            cursos.fadeIn(1500)
-            window.document.querySelector("#job").style.backgroundColor = "#FFFFFF"
-            window.document.querySelector("#edu").style.backgroundColor = "#F2F2F2"
+            xpTrabalhos.fadeOut();
+            cursos.fadeIn(1500);
+            window.document.querySelector("#job").style.backgroundColor = "#FFFFFF";
+            window.document.querySelector("#edu").style.backgroundColor = "#F2F2F2";
         }
     })
     // Função do botão para retornar ao topo do site.
@@ -50,18 +51,25 @@ $(function() {
     })
 })
 
-// Comando para deixar o ícone X do menu de navegação 'escondido' por padrão.
-window.document.querySelector(".fa-times").style.display = 'none'
+
+try {
+    // Comando para deixar o ícone X do menu de navegação 'escondido' por padrão.
+    window.document.querySelector(".fa-times").style.display = 'none';
+} catch (e) {
+    console.log(`Erro: ${e}`);
+}
+
 // Funções para capturar o valor do scroll na página atual.
 window.onscroll = function() {
-    scrollFunction()
+    scrollFunction();
 }
+
 function scrollFunction() {
-    const returnButton = $("button#return-button")
+    const returnButton = $("button#return-button");
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        returnButton.fadeIn(250)
+        returnButton.fadeIn(250);
     } else {
-        returnButton.fadeOut(250)
+        returnButton.fadeOut(250);
     }
 }
 
