@@ -73,22 +73,20 @@ function scrollFunction() {
     }
 }
 
-// As duas funções abaixo servem para atualizar a minha idade automaticamente e para atualizar o ano de direito autoral do site.
-function loadAge() {
+// A função abaixo serve para atualizar a minha idade automaticamente e para atualizar o ano de direito autoral do site.
+window.onload = function () {
     let date = new Date;
     let month = date.getMonth() + 1;
     let year = date.getFullYear();
     let bdYear = 2004;
+
+    let yearOld = year - bdYear;
+    let diffMonth = 7 - month;
 
     if (diffMonth <= 0) {
         window.document.querySelector('#yearold').innerHTML = yearOld;
     } else {
         window.document.querySelector('#yearold').innerHTML = yearOld - 1;
     }
-}
-
-function loadCurrentYear() {
-    let now = new Date;
-    let year = now.getFullYear();
     window.document.getElementById('copyright-year').innerHTML = year;
 }
