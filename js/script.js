@@ -51,14 +51,6 @@ $(function() {
     })
 })
 
-
-try {
-    // Comando para deixar o ícone X do menu de navegação 'escondido' por padrão.
-    window.document.querySelector(".fa-times").style.display = 'none';
-} catch (e) {
-    console.log(`Erro: ${e}`);
-}
-
 // Funções para capturar o valor do scroll na página atual.
 window.onscroll = function() {
     scrollFunction();
@@ -73,8 +65,12 @@ function scrollFunction() {
     }
 }
 
-// A função abaixo serve para atualizar a minha idade automaticamente e para atualizar o ano de direito autoral do site.
+
 window.onload = function () {
+    // Comando para deixar o ícone X do menu de navegação 'escondido' por padrão no mobile.
+    window.document.querySelector(".fa-times").style.display = 'none';
+
+    // Os comandos abaixo servem para atualizar a minha idade automaticamente e para atualizar o ano de direito autoral do site.
     let date = new Date;
     let month = date.getMonth() + 1;
     let year = date.getFullYear();
