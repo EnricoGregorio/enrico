@@ -1,11 +1,11 @@
 'use strict';
 //Funções JQuery
-$(function() {
+$(function () {
     const cursos = $('div.educacao');
     const xpTrabalhos = $('div.trabalhos');
 
     // Função para criar scroll dinâmico para as sessões Sobre mim, Experiências e Contato.
-    $('nav a').click(function(e) {
+    $('nav a').click(function (e) {
         e.preventDefault()
         const id = $(this).attr('href'), targetOffset = $(id).offset().top
         $('html, body').animate({
@@ -13,7 +13,7 @@ $(function() {
         }, 500)
     })
     // Função para quando pressionar o botão do menu, ele faça algo.
-    $(".menu-button").click(function() {
+    $(".menu-button").click(function () {
         const menuMobile = $('nav.mobile')
         if (menuMobile.is(':hidden') == false) {
             menuMobile.slideToggle();
@@ -26,7 +26,7 @@ $(function() {
         }
     })
     // Funções para quando pressionar algum dos botões de Trabalhos ou Educação, ele mostre o conteúdo.
-    $("#job").click(function() {
+    $("#job").click(function () {
         if (xpTrabalhos.is(':hidden') == true) {
             cursos.fadeOut();
             xpTrabalhos.fadeIn(1500);
@@ -34,7 +34,7 @@ $(function() {
             window.document.querySelector("#job").style.backgroundColor = "#F2F2F2";
         }
     })
-    $("#edu").click(function() {
+    $("#edu").click(function () {
         if (cursos.is(':hidden') == true) {
             xpTrabalhos.fadeOut();
             cursos.fadeIn(1500);
@@ -43,7 +43,7 @@ $(function() {
         }
     })
     // Função do botão para retornar ao topo do site.
-    $("#return-button").click(function() {
+    $("#return-button").click(function () {
         const topo = $('header'), targetOffset = $(topo).offset().top
         $('html, body').animate({
             scrollTop: targetOffset
@@ -52,7 +52,7 @@ $(function() {
 })
 
 // Funções para capturar o valor do scroll na página atual.
-window.onscroll = function() {
+window.onscroll = function () {
     scrollFunction();
 }
 
