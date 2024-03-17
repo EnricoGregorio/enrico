@@ -158,12 +158,12 @@ section.resumo>h2 {
 
 section.resumo>div.sobre-mim {
     max-width: 300px;
-    max-height: 250px;
+    max-height: 300px;
     color: black;
     background-color: rgba(255, 255, 255, 0.973);
     text-align: left;
     font-family: 'Montserrat';
-    padding: 30px 20px;
+    padding: 30px 30px;
     border-radius: 40px;
     box-shadow: 3px 3px 3px rgba(14, 0, 37, 0.445);
 }
